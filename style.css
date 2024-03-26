@@ -3,39 +3,83 @@
     height: 842px;
     border: 1px solid;
     margin: auto;
-    padding: 30px;
+    padding: 15px 30px 30px 30px;
     background-image: url('fond_bleu.png');
     background-size: contain;
     background-repeat: no-repeat;
+    font-family: 'Inter';
 
 }
 .photo{
-    width: 130px;
-    height: 150px;
+    width: 155px;
+    height: 165px;
     float: right;
     border: solid;
     border-radius: 20px;
     background-color: white;
     border-color: white;
+    position: relative;
+    top: 0px;
+    right: 80px;
+
 }
 img{
-    width: 130px;
-    height: 150px;
+    width: 155px;
+    height: 165px;
 }
 .titre{
     border: 1px solid;
     width: auto;
     text-align: center;
-    box-shadow: 500px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
+    font-weight: bold;
+    font-size: 14px;
 }
 .identi{
     color: white;
 }
+.Pren_Nom{
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+.Profession{
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+}
 .contact{
     color: white;
 }
-.text_parc{
+.contact1{
+    font-size: 9px;    
+}
+table{
+    width: 300px;
+}
+.contact2{
+    font-size: 6px;
+}
+.icon_phone{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 30px;
+    right: 15px;
+}
+.icon_mail{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.text_profil{
     text-align: justify;
+    font-size: 11px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 progress{
     width: 100%;
@@ -50,5 +94,71 @@ td{
     width: 10%;
     text-align: left;
     padding: none;
-    ;
+    text-align: inherit;
+}
+.img_inte{
+    width: 15px;
+    height: 15px;
+}
+.interet{
+    border: 1px solid;
+    text-align: center;
+}
+span{
+    font-family: 'Inter';
+    font-size: 12px;
+}
+.int{
+    width: 100px;
+}
+.section{
+    border-left: 2px solid;
+    padding-left: 20px;
+    border-color: #583EFF;
+    height: 105px;
+    position: relative;
+}
+.section2{
+    border-left: 2px solid;
+    padding-left: 20px;
+    border-color: #583EFF;
+    height: 105px;
+    position: relative;
+    left: 300px;
+    top: -105px;
+}
+.section::before,
+.section::after,
+.section2::before,
+.section2::after {
+        content: '';
+        position: absolute; 
+        width: 10px; 
+        height: 10px;
+        background-color: #583EFF; 
+        border-radius: 50%;
+        
+    }
+.section::before{
+    top: 0px;
+    left: -5px;
+}
+.section::after{
+    top: 100px;
+    left: -5px;
+}
+.section2::before{
+    top: 0px;
+    left: -5px;
+}
+.section2::after{
+    top: 100px;
+    left: -5px;
+}
+.parcour_titre{
+    font-weight: bold;
+    font-size: 12px;
+}
+.parcour_cont{
+    font-size: 12px;
 }
