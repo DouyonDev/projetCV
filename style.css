@@ -1,0 +1,303 @@
+body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+:root {
+    --couleur-principale: #583EFF; /* Définition de la variable --couleur-principale */
+}
+/*la page A4*/
+#PageA4{
+    width: 595px;
+    height: 842px;
+    border: 1px solid;
+    margin: auto; /*Positionnemt central de la page A4*/
+    padding: 15px 30px 30px 30px;
+    background-image: url('img/fond_bleu.png');
+    background-size: contain;/*la taille du background*/
+    background-repeat: no-repeat;
+    font-family: 'Inter';
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.397);
+}
+/***********************************************************************************************/
+/*Les styles au niveau de header*/
+/*Dimensions du cadre de la photo*/
+.photo{
+    width: 155px;
+    height: 165px;
+    float: right;
+    border: solid;
+    border-radius: 20px;
+    background-color: white;
+    border-color: white;
+    position: relative;/*Pour pouvoir déplacer le cadre grace a top et right*/
+    top: 0px;
+    right: 80px;
+}
+/*Dimensions de l'image*/
+img{
+    width: 155px;
+    height: 165px;
+}
+/*styles des titres : profils,parcours,experience et competences*/
+.titre{
+    border: 1px solid;
+    width: auto;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+}
+.identi{
+    color: white;
+}
+.Pren_Nom{
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+.Profession{
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+}
+.contact{
+    color: white;
+}
+.contact1{
+    font-size: 9px;    
+}
+table{
+    width: 300px;
+}
+.contact2{
+    font-size: 6px;
+}
+.icon_phone{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 30px;
+    right: 15px;
+}
+.icon_mail{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 30px;
+    left: 92px;
+}
+/***********************************************************************************************/
+/*Styles pour la partie main*/
+.text_profil{
+    text-align: justify;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.parcour_titre{
+    font-weight: bold;
+    font-size: 12px;
+}
+.parcour_cont{
+    font-size: 12px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-left: 25px;
+}
+/*Premier trait ODK en cours - LGBio*/
+.trait{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 110px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 5px;
+}
+/*Deuxieme trait Stage BM - ITE*/
+.trait2{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 110px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 5px;
+}
+/*Leurs points en haut*/
+.trait::before,
+.trait2::before{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    left: -5px;
+}
+/*Leurs points en bas*/
+.trait::after,
+.trait2::after{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    top: 100px;
+    left: -5px;
+}
+/*Troisieme trait ITE - Reparation d'ordinateurs*/
+.trait2_2{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 55px;
+    position: relative;
+    float: left;
+    top: 110px;
+    left: 3px;
+}
+/*Le point en bas*/
+.trait2_2::after{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    top: 55px;
+    left: -5px;
+}
+/*Les traits et points à droite*/
+.trait_right{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 110px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 300px;
+}
+.trait2_right{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 110px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 300px;
+}
+.trait2_2_right{
+    border-left: 2px solid;
+    border-color: var(--couleur-principale);
+    height: 55px;
+    position: relative;
+    float: left;
+    top: 110px;
+    left: 299px;
+}
+.trait2_2_right::after{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    top: 55px;
+    left: -5px;
+}
+.trait_right::before,
+.trait2_right::before{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    left: -5px;
+}
+.trait_right::after,
+.trait2_right::after{
+    content: '';
+    position: absolute; 
+    width: 10px; 
+    height: 10px;
+    background-color: var(--couleur-principale); 
+    border-radius: 50%;
+    top: 100px;
+    left: -5px;
+}
+/*Styles des compétences*/
+.competence{
+    line-height: 5px;
+    font-size: 9px;
+    margin: auto;
+    width: auto;
+    padding-left: 3px;
+}
+/* Styles pour le conteneur de la barre de niveau */
+progress {
+    width: 100%;  
+    height: 5px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #f2f2f2; 
+    margin: 0px 0px 0px; /* Marge autour de la barre de niveau */
+    margin-right: 4px;
+}
+/* Styles pour la barre de niveau remplie */
+progress::-webkit-progress-value {
+    background-color: var(--couleur-principale);
+    border-radius: 5px;
+}
+/* Styles pour la barre de niveau non remplie */
+progress::-webkit-progress-bar {
+    background-color: #d1c5c5;
+    border-radius: 5px;
+}
+/*pour les competences et les barres de niveau qui sont dans un tableau*/
+th{
+    width: 10%;
+    text-align: left;
+    padding: 0px;
+    height: 3px;
+}
+td{
+    width: 10%;
+    text-align: left;
+    padding: none;
+    text-align: inherit;
+    position: relative;
+    top: 0px;
+}
+/***********************************************************************************************/
+/*Styles pour la partie footer*/
+.interet{
+    border: 1px solid;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
+    
+}
+span{
+    font-family: 'Inter';
+    font-size: 12px;
+}
+.int{
+    width: 100px;
+    padding-right: 50px;
+}
+.img_interet{
+    width: 15px;
+    height: 15px;
+}
+.interet{
+    border: 1px solid;
+    text-align: center;
+}
