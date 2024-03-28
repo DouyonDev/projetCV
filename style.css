@@ -1,42 +1,39 @@
+*{
+    font-family: 'Inter';
+}
+
 body{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 :root {
     --couleur-principale: #583EFF; /* Définition de la variable --couleur-principale */
 }
-/*la page A4*/
-#PageA4{
-    width: 595px;
-    height: 842px;
-    border: 1px solid;
-    margin: auto; /*Positionnemt central de la page A4*/
-    padding: 15px 30px 30px 30px;
-    background-image: url('img/fond_bleu.png');
-    background-size: contain;/*la taille du background*/
-    background-repeat: no-repeat;
-    font-family: 'Inter';
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.397);
-}
 /***********************************************************************************************/
 /*Les styles au niveau de header*/
 /*Dimensions du cadre de la photo*/
+header{
+    background-image: url('img/fond_bleu.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
 .photo{
-    width: 155px;
-    height: 165px;
+    width: 205px;
+    height: 215px;
     float: right;
     border: solid;
     border-radius: 20px;
     background-color: white;
     border-color: white;
     position: relative;/*Pour pouvoir déplacer le cadre grace a top et right*/
-    top: 0px;
-    right: 80px;
+    top: 100px;
+    display: flex;
+    right: 100px;
 }
 /*Dimensions de l'image*/
 img{
-    width: 155px;
-    height: 165px;
+    width: 205px;
+    height: 215px;
 }
 /*styles des titres : profils,parcours,experience et competences*/
 .titre{
@@ -45,199 +42,132 @@ img{
     text-align: center;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 250%;
     margin-bottom: 7.5px;
     margin-top: 7.5px;
 }
 .identi{
     color: white;
+    display: flex;
+    font-family: 'Inter';
+    font-size: 50px;
+    margin-left: 15px;
+    position: absolute;
+    top: 50px;
+    
 }
-.Pren_Nom{
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-    top: 20px;
-}
-.Profession{
-    font-size: 12px;
-    position: relative;
-    top: 20px;
+.identi div p{
+    font-size: 50%;
+    font-weight: 100;
+    
 }
 .contact{
+    display: flex;
+    position: relative;
+}
+.contact_tel div{
     color: white;
+    line-height: 2px;
+    font-family: 'Inter';
+    font-size: 12px;
+    margin-left: 30px;
 }
-.contact1{
-    font-size: 9px;    
+.contact_tel div p{
+    font-size: 9px;
+    margin-left: -15px;
+    vertical-align: top;
+    display: flex;
 }
-table{
-    width: 300px;
+.contact_mail div{
+    color: white;
+    line-height: 3px;
+    font-family: 'Inter';
+    font-size: 12px;
+    margin-left: 30px;
 }
-.contact2{
-    font-size: 6px;
+.contact_mail div p{
+    font-size: 9px;
 }
+
 .icon_phone{
     width: 15px;
     height: 15px;
-    position: relative;
-    top: 30px;
-    right: 15px;
 }
 .icon_mail{
     width: 15px;
     height: 15px;
-    position: relative;
-    top: 30px;
-    left: 92px;
 }
+.parcour{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.experiences{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.parcour div{
+    line-height: 30px;
+}
+.experiences div{
+    line-height: 30px;
+}
+.item{
+    margin-bottom: 50px;
+}
+.parcour_gauche{
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    border-left: 10px solid var(--couleur-principale);
+}
+.experiences_gauche{
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    border-left: 10px solid var(--couleur-principale);
+}
+.parcour_droite{
+    margin-left: 10%;
+    width: auto;
+    height: auto;
+    border-left: 10px solid var(--couleur-principale);
+    padding-left: 50px;
+
+}
+.experiences_droite{
+    margin-left: 25%;
+    width: auto;
+    height: auto;
+    border-left: 10px solid var(--couleur-principale);
+    padding-left: 50px;
+}
+
 /***********************************************************************************************/
 /*Styles pour la partie main*/
 .text_profil{
     text-align: justify;
-    font-size: 12px;
+    font-size: 200%;
     padding-bottom: 5px;
     padding-top: 5px;
 }
 .parcour_titre{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 200%;
+    padding-bottom: 2px;
 }
 .parcour_cont{
-    font-size: 12px;
+    font-size: 150%;
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    padding-left: 25px;
+.parcour{
+    line-height: 2px;
 }
-/*Premier trait ODK en cours - LGBio*/
-.trait{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 5px;
-}
-/*Deuxieme trait Stage BM - ITE*/
-.trait2{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 5px;
-}
-/*Leurs points en haut*/
-.trait::before,
-.trait2::before{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    left: -5px;
-}
-/*Leurs points en bas*/
-.trait::after,
-.trait2::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 100px;
-    left: -5px;
-}
-/*Troisieme trait ITE - Reparation d'ordinateurs*/
-.trait2_2{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 55px;
-    position: relative;
-    float: left;
-    top: 110px;
-    left: 3px;
-}
-/*Le point en bas*/
-.trait2_2::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 55px;
-    left: -5px;
-}
-/*Les traits et points à droite*/
-.trait_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 300px;
-}
-.trait2_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 300px;
-}
-.trait2_2_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 55px;
-    position: relative;
-    float: left;
-    top: 110px;
-    left: 299px;
-}
-.trait2_2_right::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 55px;
-    left: -5px;
-}
-.trait_right::before,
-.trait2_right::before{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    left: -5px;
-}
-.trait_right::after,
-.trait2_right::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 100px;
-    left: -5px;
-}
+
 /*Styles des compétences*/
 .competence{
     line-height: 5px;
-    font-size: 9px;
+    font-size: 120%;
     margin: auto;
     width: auto;
     padding-left: 3px;
@@ -283,7 +213,7 @@ td{
     border: 1px solid;
     text-align: center;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
-    
+    font-size: 150%;
 }
 span{
     font-family: 'Inter';
@@ -292,12 +222,19 @@ span{
 .int{
     width: 100px;
     padding-right: 50px;
+    font-size: 80%;
 }
 .img_interet{
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 .interet{
     border: 1px solid;
     text-align: center;
+    height: auto;
+}
+.interet_text{
+    padding-right: 50px; 
+    font-size: 80%; 
+    font-weight: bold;
 }

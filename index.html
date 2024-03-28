@@ -7,10 +7,11 @@
         CV_Abdoulaye_DOUYON
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="screen630.css">
+    <link rel="stylesheet" href="screen890.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
-    <div id="PageA4">
         <header>
             <!--Photo-->
             <div class="photo">
@@ -18,28 +19,32 @@
             </div>
             <!--Prenom&Nom Profession-->
             <div class="identi">
-                <span class="Pren_Nom">
+                <div>
                     ABDOULAYE DOUYON
-                </span><br>
-                <span class="Profession">
-                    Analyste / Développeur
-                </span>
-            </div><br><br>
+                    <p>
+                        Analyste / Développeur
+                    </p>
+                </div>
+            </div>
             <!--Contacts-->
             <div class="contact">
-                <img src="img/phone.png" alt="telephone" class="icon_phone">
-                <img src="img/email.png" alt="email" class="icon_mail">
-                <table>
-                    <tr class="contact1">
-                        <td class="contact1">TELEPHONE</td>
-                        <td class="contact1">EMAIL</td>
-                    </tr>
-                    <tr class="contact2">
-                        <td class="contact2"> +223 92 25 70 11</td>
-                        <td class="contact2"> abdoulayedouyon.ad@gmail.com</td>
-                    </tr>
-                </table>
-            </div> <br><br><br><br>
+                <div class="contact_tel">
+                    <div>
+                        TELEPHONE
+                        <p>
+                            <img src="img/phone.png" alt="telephone" class="icon_phone">+223 92 25 70 11
+                        </p>
+                    </div>
+                </div>
+                <div class="contact_mail">
+                    <div>
+                        E-mail
+                        <p>
+                            <img src="img/email.png" alt="email" class="icon_mail">abdoualyedouyon.ad@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div> <br><br><br><br><br>
         </header>
         <main>
             <!--PROFILE-->
@@ -64,8 +69,9 @@
             <!--bloc div pour mettre les barres verticales a gauche des items(PARCOURS)-->
             <div class="trait"></div>
             <div class="trait_right"></div>
-            <!--Utilisation de grid pour diviser "container"en deux colonnes et des items pour chaque parcours-->
-            <div class="container">
+        <div class="parcour">
+            <div class="parcour_gauche">
+                <div class="point_trait_gauche"></div>
                 <div class="item">
                     <d1 class="parcour_titre">ODK en cours</d1> <br>
                     <d1 class="parcour_cont">Developpeur Full-Stack</d1><br>
@@ -76,17 +82,21 @@
                     <d1 class="parcour_cont">TecnoLab-ISTA</d1><br>
                     <d1 class="parcour_titre">2021-2023</d1>
                 </div>
+            </div>
+            <div class="parcour_droite">
+                <div class="point_trait"></div>
                 <div class="item">
                     <d1 class="parcour_titre">Licence Génie Biologique</d1> <br>
                     <d1 class="parcour_cont">Institut des Sciences Appliquées</d1><br>
-                    <d1 class="parcour_titre">2024</d1>
+                    <d1 class="parcour_titre">2023</d1>
                 </div>
                 <div class="item">
                     <d1 class="parcour_titre">Baccalauréat Malien</d1> <br>
                     <d1 class="parcour_cont">Terminale Sciences Expérimentales</d1><br>
                     <d1 class="parcour_titre">2014-2017</d1>
                 </div>
-            </div>
+            </div><br><br><br><br><br><br><br><br><br><br>
+        </div>
             <!--EXPERIENCES-->
             <!--EXPERIENCES-Entete-->
             <div class="titre">
@@ -97,8 +107,9 @@
             <div class="trait2_2"></div>
             <div class="trait2_right"></div>
             <div class="trait2_2_right"></div>
-            <!--Utilisation de grid pour diviser "container"en deux colonnes et des items pour chaque experience-->
-            <div class="container">
+        <div class="experiences">
+            <div class="experiences_gauche">
+                <div class="point_trait_gauche"></div>
                 <div class="item">
                     <d1 class="parcour_titre">Stage Bio-Médicale</d1> <br>
                     <d1 class="parcour_cont">Hôpital du point-G</d1><br>
@@ -114,6 +125,9 @@
                     <d1 class="parcour_cont">CISCO</d1><br>
                     <d1 class="parcour_titre">2023</d1>
                 </div>
+            </div>
+            <div class="experiences_droite">
+                <div class="point_trait"></div>
                 <div class="item">
                     <d1 class="parcour_titre">Conception des cartes</d1> <br>
                     <d1 class="parcour_cont">Divers établissements</d1><br>
@@ -121,6 +135,7 @@
                 </div>
                 <div class="item">
                     <d1 class="parcour_titre">Réparation d'ordinateurs</d1> <br>
+                    <d1 class="parcour_cont"></d1><br>
                     <d1 class="parcour_cont">depuis 2021</d1><br>
                     <d1 class="parcour_titre"></d1>
                 </div>
@@ -130,6 +145,7 @@
                     <d1 class="parcour_titre"></d1>
                 </div>
             </div>
+        </div>
             <!--COMPETENCES-->
             <!--COMPETENCES-Entete-->
             <div class="titre">
@@ -157,12 +173,11 @@
         <footer>
             <!--Interet-->
             <div class="interet">
-                <span style="padding-right: 50px;">INTERETS</span>
+                <span class="interet_text">INTERETS</span>
                 <span class="int"><img src="img/sport.png" alt="sport" class="img_interet">  SPORT</span>
                 <span class="int"><img src="img/musique.png" alt="musique" class="img_interet">  MUSIQUE</span>
                 <span class="int"><img src="img/code.png" alt="code" class="img_interet">  CODE</span>
             </div>
         </footer>
-    </div>
 </body>
 </html>

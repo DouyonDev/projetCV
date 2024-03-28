@@ -1,0 +1,68 @@
+@media screen and (max-width: 630px) {
+    header{
+        background-image: url('img/fond_bleu.png');
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 150px;
+    }
+    .parcour{
+        flex-direction: column;
+    }
+    .experiences{
+        flex-direction: column;
+    }
+    .parcour_droite{
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .experiences_droite{
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .photo{
+        width: 205px;
+        height: 215px;
+        border: solid;
+        border-radius: 100px;
+        background-color: white;
+        border-color: white;
+        position: relative;
+        top: 250px;
+        right: 90px;
+    }
+    img{
+        width: 205px;
+        height: 215px;
+        border-radius: 100px;
+    }
+    .identi{
+        width: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: 'Inter';
+    }
+    .interet{
+        font-size: 100%;
+    }
+    .int{
+        padding-right: 0px;
+    }
+    .text_profil{
+        font-size: 100%;
+    }
+    .interet_text{
+        padding-right: 50px; 
+        font-size: 80%; 
+        font-weight: bold;
+    }
+    .parcour_titre{
+        font-weight: bold;
+        font-size: 100%;
+        padding-bottom: 2px;
+    }
+    .parcour_cont{
+        font-size: 100%;
+    }
+}

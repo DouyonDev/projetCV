@@ -1,0 +1,30 @@
+@media screen and (max-width: 890px) {
+    header{
+        display: fle;
+        top: 100px;
+        background-image: url('img/fond_bleu.png');
+        flex-direction: column;
+        height: 500%;
+    }
+    .photo{
+        width: 205px;
+        height: 215px;
+        border: solid;
+        border-radius: 100px;
+        background-color: white;
+        border-color: white;
+        position: absolute;
+        top: 70px;
+    }
+    img{
+        width: 205px;
+        height: 215px;
+        border-radius: 100px;
+    }
+    .identi{
+        width: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+    }
+}
