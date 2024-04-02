@@ -12,7 +12,7 @@ body{
     border: 1px solid;
     margin: auto; /*Positionnemt central de la page A4*/
     padding: 15px 30px 30px 30px;
-    background-image: url('img/fond_bleu.png');
+    background-image: url('../images/fond_bleu.png');
     background-size: contain;/*la taille du background*/
     background-repeat: no-repeat;
     font-family: 'Inter';
