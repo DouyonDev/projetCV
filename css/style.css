@@ -21,6 +21,11 @@ body{
 /***********************************************************************************************/
 /*Les styles au niveau de header*/
 /*Dimensions du cadre de la photo*/
+p{
+    line-height: 0%;
+    padding: 0%;
+    margin: 0%;
+}
 .photo{
     width: 155px;
     height: 165px;
@@ -97,6 +102,9 @@ table{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+.item{
+    padding-bottom: 13px;
+}
 .parcour_titre{
     font-weight: bold;
     font-size: 12px;
@@ -110,6 +118,7 @@ table{
     grid-template-rows: auto;
     grid-gap: 20px;
     padding-left: 25px;
+    padding-top: 15px;
 }
 /*Premier trait ODK en cours - LGBio*/
 .trait{
