@@ -300,11 +300,11 @@ span{
 }
 .int{
     width: 100px;
-    padding-right: 50px;
+    padding-right: 0px;
 }
 .img_interet{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 .interet{
     border: 1px solid;
