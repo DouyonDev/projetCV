@@ -1,116 +1,46 @@
 body{
     padding-top: 100px;
     padding-bottom: 100px;
+    font-family: 'Inter';
 }
 :root {
     --couleur-principale: #583EFF; /* Définition de la variable --couleur-principale */
 }
-/*la page A4*/
-#PageA4{
-    width: 595px;
-    height: 842px;
-    border: 1px solid;
-    margin: auto; /*Positionnemt central de la page A4*/
-    padding: 15px 30px 30px 30px;
-    background-image: url('./fond_bleu.png');
-    background-size: contain;/*la taille du background*/
-    background-repeat: no-repeat;
-    font-family: 'Inter';
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.397);
+header{
+    margin-bottom: 15%;
 }
-/***********************************************************************************************/
-/*Les styles au niveau de header*/
-/*Dimensions du cadre de la photo*/
-p{
-    line-height: 0%;
-    padding: 0%;
-    margin: 0%;
-}
-.photo{
-    width: 155px;
-    height: 165px;
-    float: right;
-    border: solid;
-    border-radius: 20px;
-    background-color: white;
-    border-color: white;
-    position: relative;/*Pour pouvoir déplacer le cadre grace a top et right*/
-    top: 0px;
-    right: 80px;
-}
-/*Dimensions de l'image*/
-img{
-    width: 155px;
-    height: 165px;
-}
-/*styles des titres : profils,parcours,experience et competences*/
-.titre{
-    border: 1px solid;
-    width: auto;
-    text-align: center;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 7.5px;
-    margin-top: 7.5px;
-}
-.identi{
-    color: white;
-}
-.Pren_Nom{
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-    top: 20px;
-}
-.Profession{
-    font-size: 12px;
-    position: relative;
-    top: 20px;
-}
-.contact{
-    color: white;
-}
-.contact1{
-    font-size: 9px;    
-}
-table{
-    width: 300px;
-}
-.contact2{
-    font-size: 6px;
-}
-.icon_phone{
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: 30px;
-    right: 15px;
-}
-.icon_mail{
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: 30px;
-    left: 92px;
+main{
+    padding-bottom: 25px;
 }
 /***********************************************************************************************/
 /*Styles pour la partie main*/
+.titre{
+    border-radius: 15px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px rgba(38, 0, 255, 0.397);
+    font-weight: bold;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    /* font-size: 200%; */
+    font-size: 4vw;
+}
 .text_profil{
     text-align: justify;
     font-size: 12px;
     padding-bottom: 5px;
     padding-top: 5px;
-}
-.item{
-    padding-bottom: 13px;
+    font-size: 150%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .parcour_titre{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 120%;
+    word-wrap: break-word;
 }
 .parcour_cont{
-    font-size: 12px;
+    font-size: 120%;
 }
 .container{
     display: grid;
@@ -118,148 +48,38 @@ table{
     grid-template-rows: auto;
     grid-gap: 20px;
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
-/*Premier trait ODK en cours - LGBio*/
-.trait{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 5px;
-}
-/*Deuxieme trait Stage BM - ITE*/
-.trait2{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 5px;
-}
-/*Leurs points en haut*/
-.trait::before,
-.trait2::before{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    left: -5px;
-}
-/*Leurs points en bas*/
-.trait::after,
-.trait2::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 100px;
-    left: -5px;
-}
-/*Troisieme trait ITE - Reparation d'ordinateurs*/
-.trait2_2{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 55px;
-    position: relative;
-    float: left;
-    top: 110px;
-    left: 3px;
-}
-/*Le point en bas*/
-.trait2_2::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 55px;
-    left: -5px;
-}
-/*Les traits et points à droite*/
-.trait_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 300px;
-}
-.trait2_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 110px;
-    position: relative;
-    float: left;
-    top: 9px;
-    left: 300px;
-}
-.trait2_2_right{
-    border-left: 2px solid;
-    border-color: var(--couleur-principale);
-    height: 55px;
-    position: relative;
-    float: left;
-    top: 110px;
-    left: 299px;
-}
-.trait2_2_right::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 55px;
-    left: -5px;
-}
-.trait_right::before,
-.trait2_right::before{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    left: -5px;
-}
-.trait_right::after,
-.trait2_right::after{
-    content: '';
-    position: absolute; 
-    width: 10px; 
-    height: 10px;
-    background-color: var(--couleur-principale); 
-    border-radius: 50%;
-    top: 100px;
-    left: -5px;
+.item{
+    padding-bottom: 13px;
+    line-height: 2%;
+    border-left: 5px solid var(--couleur-principale);
+    padding-left: 5%;
 }
 /*Styles des compétences*/
-.competence{
+.competence_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     line-height: 5px;
     font-size: 9px;
-    margin: auto;
+    font-size: 150%;
+    gap: 30px;
+    place-items: center;
+}
+.competence_item{
+    line-height: 0px;
     width: auto;
-    padding-left: 3px;
 }
 /* Styles pour le conteneur de la barre de niveau */
-progress {
-    width: 100%;  
-    height: 5px; 
+progress {  
+    
+    height: 15px; 
     border: none; 
     border-radius: 5px; 
     background-color: #f2f2f2; 
-    margin: 0px 0px 0px; /* Marge autour de la barre de niveau */
     margin-right: 4px;
+    box-shadow: 0px 0px 3px 3px rgba(38, 0, 255, 0.397);
 }
 /* Styles pour la barre de niveau remplie */
 progress::-webkit-progress-value {
@@ -271,42 +91,86 @@ progress::-webkit-progress-bar {
     background-color: #d1c5c5;
     border-radius: 5px;
 }
-/*pour les competences et les barres de niveau qui sont dans un tableau*/
-th{
-    width: 10%;
-    text-align: left;
-    padding: 0px;
-    height: 3px;
-}
-td{
-    width: 10%;
-    text-align: left;
-    padding: none;
-    text-align: inherit;
-    position: relative;
-    top: 0px;
-}
 /***********************************************************************************************/
 /*Styles pour la partie footer*/
 .interet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     border: 1px solid;
     text-align: center;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.397);
-    
+    border: 1px solid;
+    place-items: center;
+    width: auto;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-span{
-    font-family: 'Inter';
-    font-size: 12px;
+.titre_interet{
+    padding-right: 10px; 
+    font-weight: bold; 
+    /* grid-row: 1 / span 3; 
+    grid-column: 1 / span 3; */
+    font-size: 150%;
+    text-align: center;
 }
 .int{
     width: 100px;
     padding-right: 0px;
-}
-.img_interet{
-    width: 20px;
-    height: 20px;
-}
-.interet{
-    border: 1px solid;
     text-align: center;
 }
+.img_interet{
+    width: 50px;
+    height: 50px;
+}
+/********************************************************************************************************************************************************/
+.entete{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    font-family: 'Inter';
+}
+body{
+    background-image: url('./fond_bleu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bloc_info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    color: white;
+}
+.bloc_info_item{
+    text-align: center;
+    font-size: 100%;
+}
+.bloc_info_item span{
+    font-size: 200%;
+}
+.Pren_Nom{
+    font-weight: bold;
+}
+.Profession{
+    font-size: 12px;
+}
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    color: white;
+}
+.bloc_image{
+    text-align: center;
+}
+.photo img{
+    border: 2px var(--couleur-principale) solid;
+    border-radius: 80px;
+    width: 50%;
+}
+
+
